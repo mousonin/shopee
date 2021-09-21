@@ -21,15 +21,6 @@ html {
     background-color: #f5f5f5;
 }
 
-.grid {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.grid__full-width {
-    width: 100%;
-}
-
 .grid__row {
     display: flex;
     flex-wrap: wrap;

@@ -1,0 +1,42 @@
+/* Mobile and tablet */
+@media (max-width: 1023px) {
+    :root {
+        --header-height: 68px;
+        --navbar-height: 0px;
+    }
+    .hide-on-mobile-tablet {
+        display: none;
+    }
+    #header {
+        position: fixed;
+    }
+    #header .header__search-cart {
+        width: 80px;
+    }
+    #header .cart-list {
+        position: fixed;
+        top: var(--header-height);
+        width: 100%;
+        right: 0;
+        left: 0;
+        padding: 0 calc((100% - 644px)/2);
+        overflow: hidden;
+    }
+    .header__sort-bar {
+        display: flex;
+    }
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+    .hide-on-tablet {
+        display: none;
+    }
+}
+
+/* Mobile */
+@media (max-width: 739px) {
+    .hide-on-mobile {
+        display: none;
+    }
+}

@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://pagecdn.io/lib/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="stylesheet" href="./assets/fonts/themify-icons-font/themify-icons/themify-icons.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
@@ -16,8 +18,8 @@
 <body>
     <div id="main">
         <header id="header">
-            <div class="grid">
-                <div class="header__navbar">
+            <div class="grid wide">
+                <div class="header__navbar hide-on-mobile-tablet">
                     <ul class="navbar__list">
                         <li class="navbar__item navbar__item-seperate">
                             <a href="#" class="navbar__item-link">Kênh người bán</a>
@@ -131,7 +133,7 @@
                     </ul>
                 </div>
                 <div class="header__search">
-                    <div class="header__search-logo">
+                    <div class="header__search-logo hide-on-tablet">
                         <svg viewBox="0 0 192 65" class="header__logo-img" fill="#fff">
                             <g fill-rule="evenodd">
                                 <path
@@ -144,7 +146,7 @@
                         <div class="search-bar">
                             <input type="text" class="search-bar__input" placeholder="Bạn muốn tìm gì ?">
                             <div class="search-bar__histories">
-                                <span class="pd8">
+                                <span class="pd8 hide-on-mobile-tablet">
                                     Siêu sale Shopee Mart -20%
                                     <img src="./assets/images/sieu_sale_9_9.png" alt="">
                                 </span>
@@ -218,11 +220,25 @@
                     </div>
                 </div>
             </div>
+            <ul class="header__sort-bar">
+                <li class="header__sort-item header__sort-item-active">
+                    <a href="" class="header__sort-link">Liên quan</a>
+                </li>
+                <li class="header__sort-item">
+                    <a href="" class="header__sort-link">Mới nhất</a>
+                </li>
+                <li class="header__sort-item">
+                    <a href="" class="header__sort-link">Bán chạy</a>
+                </li>
+                <li class="header__sort-item">
+                    <a href="" class="header__sort-link">Giá</a>
+                </li>
+            </ul>
 
         </header>
 
         <div id="container">
-            <div class="grid">
+            <div class="grid wide">
                 <div class="grid__row">
                     <div class="slidebar grid__column2">
                         <div class="categories pd20">
@@ -271,7 +287,7 @@
                         </div>
                     </div>
                     <div class="grid__column10">
-                        <div class="grid__row sort-product__form pd20">
+                        <div class="grid__row sort-product__form pd20 hide-on-mobile-tablet">
                             <div class="grid__row sort-product__list">
                                 <p>Sắp xếp theo</p>
                                 <button class="btn-primary btn-sort-product btn-control">
@@ -305,7 +321,7 @@
                             <div class="grid__row"> 
                                 <div class="grid__column2-5 product-item">
                                     <div class="product-item__image"
-                                        style="background-image: url(/assets/images/product-image/Apple-AirPods.jpg); background-size: contain; padding-top: 100%; background-repeat: no-repeat;">
+                                        style="background-image: url(/assets/images/Apple-AirPods.jpg); background-size: contain; padding-top: 100%; background-repeat: no-repeat;">
                                     </div>
                                     <div class="product-item__info">
                                         <p>Apple Pods with Charging Case 2nd gen</p>
@@ -341,7 +357,7 @@
                                 </div>
                                 <div class="grid__column2-5 product-item">
                                     <div class="product-item__image"
-                                        style="background-image: url(/assets/images/product-image/Apple-AirPods.jpg); background-size: contain; padding-top: 100%; background-repeat: no-repeat;">
+                                        style="background-image: url(/assets/images/Apple-AirPods.jpg); background-size: contain; padding-top: 100%; background-repeat: no-repeat;">
                                     </div>
                                     <div class="product-item__info">
                                         <p>Apple Pods with Charging Case 2nd gen</p>
@@ -377,7 +393,7 @@
                                 </div>
                                 <div class="grid__column2-5 product-item">
                                     <div class="product-item__image"
-                                        style="background-image: url(/assets/images/product-image/Apple-AirPods.jpg); background-size: contain; padding-top: 100%; background-repeat: no-repeat;">
+                                        style="background-image: url(/assets/images/Apple-AirPods.jpg); background-size: contain; padding-top: 100%; background-repeat: no-repeat;">
                                     </div>
                                     <div class="product-item__info">
                                         <p>Apple Pods with Charging Case 2nd gen</p>
@@ -413,7 +429,7 @@
                                 </div>
                                 <div class="grid__column2-5 product-item">
                                     <div class="product-item__image"
-                                        style="background-image: url(/assets/images/product-image/Apple-AirPods.jpg); background-size: contain; padding-top: 100%; background-repeat: no-repeat;">
+                                        style="background-image: url(/assets/images/Apple-AirPods.jpg); background-size: contain; padding-top: 100%; background-repeat: no-repeat;">
                                     </div>
                                     <div class="product-item__info">
                                         <p>Apple Pods with Charging Case 2nd gen</p>
@@ -449,7 +465,9 @@
                                 </div>
                                 <div class="grid__column2-5 product-item">
                                     <div class="product-item__image"
-                                        style="background-image: url(/assets/images/product-image/Apple-AirPods.jpg); background-size: contain; padding-top: 100%; background-repeat: no-repeat;">
+                                        style="background-image: url(/assets/images/Apple-AirPods.jpg
+                                        
+                                        ); background-size: contain; padding-top: 100%; background-repeat: no-repeat;">
                                     </div>
                                     <div class="product-item__info">
                                         <p>Apple Pods with Charging Case 2nd gen</p>
@@ -487,7 +505,7 @@
                             <div class="grid__row"> 
                                 <div class="grid__column2-5 product-item">
                                     <div class="product-item__image"
-                                        style="background-image: url(/assets/images/product-image/Apple-AirPods.jpg); background-size: contain; padding-top: 100%; background-repeat: no-repeat;">
+                                        style="background-image: url(/assets/images/Apple-AirPods.jpg); background-size: contain; padding-top: 100%; background-repeat: no-repeat;">
                                     </div>
                                     <div class="product-item__info">
                                         <p>Apple Pods with Charging Case 2nd gen</p>
@@ -523,7 +541,7 @@
                                 </div>
                                 <div class="grid__column2-5 product-item">
                                     <div class="product-item__image"
-                                        style="background-image: url(/assets/images/product-image/Apple-AirPods.jpg); background-size: contain; padding-top: 100%; background-repeat: no-repeat;">
+                                        style="background-image: url(/assets/images/Apple-AirPods.jpg); background-size: contain; padding-top: 100%; background-repeat: no-repeat;">
                                     </div>
                                     <div class="product-item__info">
                                         <p>Apple Pods with Charging Case 2nd gen</p>
@@ -559,7 +577,7 @@
                                 </div>
                                 <div class="grid__column2-5 product-item">
                                     <div class="product-item__image"
-                                        style="background-image: url(/assets/images/product-image/Apple-AirPods.jpg); background-size: contain; padding-top: 100%; background-repeat: no-repeat;">
+                                        style="background-image: url(/assets/images/Apple-AirPods.jpg); background-size: contain; padding-top: 100%; background-repeat: no-repeat;">
                                     </div>
                                     <div class="product-item__info">
                                         <p>Apple Pods with Charging Case 2nd gen</p>
@@ -595,7 +613,7 @@
                                 </div>
                                 <div class="grid__column2-5 product-item">
                                     <div class="product-item__image"
-                                        style="background-image: url(/assets/images/product-image/Apple-AirPods.jpg); background-size: contain; padding-top: 100%; background-repeat: no-repeat;">
+                                        style="background-image: url(/assets/images/Apple-AirPods.jpg); background-size: contain; padding-top: 100%; background-repeat: no-repeat;">
                                     </div>
                                     <div class="product-item__info">
                                         <p>Apple Pods with Charging Case 2nd gen</p>
@@ -631,7 +649,7 @@
                                 </div>
                                 <div class="grid__column2-5 product-item">
                                     <div class="product-item__image"
-                                        style="background-image: url(/assets/images/product-image/Apple-AirPods.jpg); background-size: contain; padding-top: 100%; background-repeat: no-repeat;">
+                                        style="background-image: url(/assets/images/Apple-AirPods.jpg); background-size: contain; padding-top: 100%; background-repeat: no-repeat;">
                                     </div>
                                     <div class="product-item__info">
                                         <p>Apple Pods with Charging Case 2nd gen</p>
@@ -680,7 +698,7 @@
         </div>
 
         <footer id="footer">
-            <div class="grid mt30">
+            <div class="grid wide mt30">
                 <div class="grid__row">
                     <div class="grid__column2-5">
                         <span class="footer__heading">CHĂM SÓC KHÁCH HÀNG</span>
@@ -741,7 +759,7 @@
                     </div>
                     <div class="grid__column2-5">
                         <span class="footer__heading">TẢI ỨNG DỤNG SHOPEE NGAY THÔI</span>
-                        <div class="grid__row">
+                        <div class="grid__row app-download__list">
                             <img src="./assets/images/qr-code.png" alt="" class="QR-download">
                             <div class="grid__full-width">
                                 <img src="./assets/images/app_store.png" alt="" class="app-download">
