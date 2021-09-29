@@ -39,4 +39,38 @@
     .hide-on-mobile {
         display: none;
     }
+    #header .header__search {
+        justify-content: space-between;
+        padding: 0 10px;
+    }
+    #header .header__logo-img {
+        margin: unset;
+    }
+    .header__search-bar {
+        position: fixed;
+        top: var(--header-height);
+        width: 100%;
+        left: 0;
+        animation: mobileSearchSideIn linear 0.5s;
+        display: none;
+    }
+    .header__search-mobile {
+        display: block;
+    }
+    .header__search-checkbox:checked ~ .header__search-bar {
+        display: flex;
+    }
+    #header .header__search-cart {
+        width: unset;
+    }
+    @keyframes mobileSearchSideIn {
+        from {
+            top: calc(var(--header-height) / 2);
+            opacity: 0;
+        }
+        to {
+            top: var(--header-height);
+            opacity: 1;
+        }
+    }
 }

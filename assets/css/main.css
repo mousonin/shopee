@@ -221,7 +221,14 @@ html{
     margin-right: 48px;
 }
 
-#header .header__search-bar {
+.header__search-mobile {
+    order: -1;
+    color: var(--white-color);
+    font-size: 1.8rem;
+    display: none;
+}
+
+.header__search-bar {
     flex-grow: 1;
     display: flex;
     background-color: var(--white-color);
