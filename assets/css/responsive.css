@@ -41,7 +41,7 @@
     }
     #header .header__search {
         justify-content: space-between;
-        padding: 0 10px;
+        padding: 0 10px 0 30px;
     }
     #header .header__logo-img {
         margin: unset;
@@ -54,8 +54,18 @@
         animation: mobileSearchSideIn linear 0.5s;
         display: none;
     }
+    #header .search-bar__histories {
+        width: 100vh;
+    }
+    .header__menu-mobile,
     .header__search-mobile {
         display: block;
+    }
+    .header__menu-mobile {
+        position: fixed;
+        padding: 10px;
+        transform: translateY(-50%);
+        top: calc(var( --header-height)/2);
     }
     .header__search-checkbox:checked ~ .header__search-bar {
         display: flex;

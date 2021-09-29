@@ -220,7 +220,7 @@ html{
     height: 48px;
     margin-right: 48px;
 }
-
+.header__menu-mobile,
 .header__search-mobile {
     order: -1;
     color: var(--white-color);
@@ -289,7 +289,7 @@ html{
 }
 
 #header .search__options {
-    width: 150px;
+    width: 140px;
     border-left: 1px solid #ccc;
     line-height: 25px;
     position: relative;
@@ -971,11 +971,10 @@ html{
 
 #footer .app-download__list {
    margin-top: 10px;
-   flex-wrap: nowrap;
 }
 
 #footer .app-download {
-    margin: 10px 10px;
+    padding: 5px;
     width: 60%;
     display: block;
 }
