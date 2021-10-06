@@ -773,16 +773,14 @@ html{
 }
 
 .product-list {
-    margin: 0 -5px;
-
 }
 
 .product-item {
     background-color: var(--white-color);
     transition: top linear 0.1s;
     position: relative;
-    top: 0;
     box-shadow: 0px 1px 4px #ececec;
+    margin-top: 10px;
 }
 
 .product-item:hover {
@@ -832,6 +830,10 @@ html{
     height: 11px;
 }
 
+.product-item__price {
+    display: flex;
+}
+
 .product-item__info .product-item__price {
     flex-wrap: nowrap;
 }
@@ -868,6 +870,10 @@ html{
 .product-item__price i {
     margin-left: 2px;
     color: #00bfa5;
+}
+
+.product-item__rating {
+    display: flex;
 }
 
 .product-item__rating .product-item__rating--liked {

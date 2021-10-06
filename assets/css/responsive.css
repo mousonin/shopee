@@ -53,7 +53,7 @@
             opacity: 0;
         }
         to {
-            left: a0;
+            left: 0;
             opacity: 1;
         }
     }
