@@ -60,6 +60,11 @@
     .header__menu-checkbox:checked ~ .slidebar {
         display: block;
     }
+    .product-list {
+        margin: 0 5px;
+    }
+    .product-item {
+    }
 }
 
 /* Tablet */

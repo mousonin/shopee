@@ -780,7 +780,8 @@ html{
     transition: top linear 0.1s;
     position: relative;
     box-shadow: 0px 1px 4px #ececec;
-    margin-top: 10px;
+    margin-top: 5px;
+    
 }
 
 .product-item:hover {
