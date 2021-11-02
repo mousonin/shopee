@@ -60,17 +60,18 @@
     .header__menu-checkbox:checked ~ .slidebar {
         display: block;
     }
-    .product-list {
-        margin: 0 5px;
-    }
-    .product-item {
-    }
 }
 
 /* Tablet */
 @media (min-width: 740px) and (max-width: 1023px) {
     .hide-on-tablet {
         display: none;
+    }
+    .product-list {
+        margin: 0 15px;
+    }
+    .product-item {
+        margin: 5px -10px ;
     }
 }
 
@@ -111,5 +112,11 @@
             top: var(--header-height);
             opacity: 1;
         }
+    }
+    .product-list {
+        margin: 0 10px;
+    }
+    .product-item {
+        margin: 2px -2px ;
     }
 }
