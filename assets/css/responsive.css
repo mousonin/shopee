@@ -113,6 +113,9 @@
             opacity: 1;
         }
     }
+    .mobile-category {
+        display: block;
+    }
     .product-list {
         margin: 0 10px;
     }
